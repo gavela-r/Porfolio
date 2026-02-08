@@ -1,0 +1,26 @@
+body{
+    background-color: #0b1e0c;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0px;
+
+}
+
+li{
+    color: white;
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+}
