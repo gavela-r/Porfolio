@@ -2,12 +2,12 @@
 body{
     background-color: #608baa;
     margin: 0 auto;
-    padding-top: 80px;
     font-family: sans-serif;
 }
-html {
-  scroll-behavior: auto;
-  min-height: 100dvh;
+html{
+    scroll-behavior: smooth;
+    min-height: 100dvh;
+    overflow-x: hidden;
 }
 /* Estilos animados para el fondo */
 body::before{
@@ -24,12 +24,10 @@ body::before{
     animation: moverLineas 40s infinite linear;
     z-index: -1;
     will-change: transform;
+
 }
 /* Estilos para el header */
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 80px;
     display: flex;
@@ -37,6 +35,10 @@ header{
     align-items: center;
     z-index: 1000;
     animation: entrada 0.5s ease-out;
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 /* Estilos para la lista de la cabecera */
 .lista{
@@ -54,7 +56,7 @@ li{
     padding: 20px;
     cursor: pointer;
 }
-/* Estilos para el contenido principal */
+/* Estilos la primera parte */
 main{
     display: flex;
     flex-direction: column;
@@ -137,6 +139,7 @@ section h1{
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Sobre Mi */
 hr{
     margin-top: 160px;
     width: 80%;
@@ -154,8 +157,277 @@ hr{
 .descripcion{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.titulo2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.fotoContainer{
+    width: 300px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+.fotoContainer .foto{
+    border-radius: 100%;
+    width: 100%;
+    height: 300%;
+    object-fit: cover;
+}
+.textoDescriptivo{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    max-width: 350px;
 
 }
+
+.horizontal{
+    transform: rotate(90deg);
+    width: 400px;   
+    height: 2px;   
+    border: none;
+}
+
+.anim-left,
+.anim-right{
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.anim-right{
+    transform: translateX(100px);
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Experiencia */
+.experiencia{
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.experienciaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 90vw;
+
+}
+
+.cajon1{
+    color: white;
+    font-size: 30px;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 0px;
+    background-color:#254f6e;
+    width: 100%;
+    padding: 20px;
+}
+.cajon1 p,
+.cajon2 p{
+    font-size: 20px;
+}
+.cajon2{
+    color: white;
+    font-size: 30px;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #5f93b7;
+    width: 100%;
+}
+/*Habilidades */
+.habilidades {
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.habilidadesContainer {
+    overflow-x: hidden;
+    width: 100%;
+    align-self: stretch;
+}
+
+section#habilidades {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.fila {
+    position: relative;         
+    overflow: hidden;
+    white-space: nowrap;
+    min-height: 150px; 
+}
+
+.duplicado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    animation: scroll 30s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.duplicado.secondary {
+    animation-delay: -15s;
+}
+
+.lenguajes {
+    width: 200px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+
+.lenguajes p {
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.imgLenguajes {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-image: none;
+}
+
+/*Estudios */
+.estudios{
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.estudiosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 90vw;
+}
+
+.cajon1{
+    color: white;
+    font-size: 30px;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 0px;
+    background-color:#254f6e;
+    width: 100%;
+    padding: 20px;
+}
+
+.cajon1 p,
+.cajon2 p{
+    font-size: 20px;
+}
+
+/*Proyectos */
+.proyectos{
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.proyectoImagen{
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #5f93b7;
+}
+
+.proyectosContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.proyecto{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+.listaLenguajes{
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.html{
+    border-radius: 20px;
+    background-color: #f16524;
+    color: black;
+}
+.css{
+    border-radius: 20px;
+    background-color: #2965f1;
+    color: black;
+}
+.javascript{
+    border-radius: 20px;
+    background-color: #f0db4f;
+    color: black;
+}
+.react{
+    border-radius: 20px;
+    background-color: #61dbfb;
+    color: black;
+}
+
+.php{
+    border-radius: 20px;
+    background-color: #777bb4;
+    color: black;
+}
+
+.docker{
+    border-radius: 20px;
+    background-color: #0db7ed;
+    color: black;
+}
+
+.bootstrap{
+    border-radius: 20px;
+    background-color: #563d7c;
+    color: black;
+}   
+
+.node{
+    border-radius: 20px;
+    background-color: #68a063;
+    color: black;
+}
+
 /* Estilos para las animaciones */
 @keyframes moverLineas{
     from{
@@ -175,5 +447,38 @@ hr{
     to{
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .descripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nombre{
+        font-size: 60px;
+    }
+
+    .fotoContainer {
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+
+    .horizontal {
+        transform: rotate(0deg);
+    }
+
+    .proyectosContainer {
+        grid-template-columns: 1fr; 
     }
 }

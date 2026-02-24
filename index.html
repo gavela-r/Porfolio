@@ -10,34 +10,256 @@
 <body>
     <header>
         <ul class="lista">
-            <li id="sobreMi">Sobre Mi</li>
-            <li id="experiencia">Experiencia</li>
-            <li id="habilidades">Habilidades</li>
-            <li id="estudios">Estudios</li>
-            <li id="proyectos">Proyectos</li>
+            <li><a href="#sobreMi">Sobre Mi</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#estudios">Estudios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
         </ul>
     </header>
     <main>
         <section>
-            <h1>Adrián Gavela Rodríguez</h1>
+            <h1 class="nombre">Adrián Gavela Rodríguez</h1>
             <h2 class="subtitulo">Desarrollador Web Front- End</h2>
             <div class="redes">
-                <a href="http://github.com/gavela-r" class="git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/gavela-r" class="git"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/adrian-gavela-94a31336b" class="linkeding"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="cv"><a href="https://drive.google.com/file/d/1l_gGT8bNdyvexP-x9O3aacdHjBYHJuJ9/view?usp=drive_link" class="curriculum">Ver Curriculum</a></div>
         </section>
 
         <hr>
-        <section class="sobreMi">
-            <h2>Sobre Mi</h2>
+        <section id="sobreMi"  class="sobreMi">
+            <h2 class="titulo2">Sobre Mi</h2>
             <div class="descripcion">
-                <img src="img/imagen.jpg" alt="Foto de Adrián Gavela Rodríguez"></img>
-                <p>Soy Adrián Gavela Rodríguez, desarrollador web Front-End, especializo en tecnologías como HTML, CSS, JavaScript y frameworks como React. 
+                <div class="fotoContainer anim-left">
+                    <img class="foto" src="img/imagen.jpg" alt="Foto de Adrián Gavela Rodríguez"></img>
+                </div>
+                <hr class="horizontal">
+                <p class="textoDescriptivo anim-right">Soy Adrián Gavela Rodríguez, desarrollador web Front-End, especializo en tecnologías como HTML, CSS, JavaScript y frameworks como React. 
                 Me motiva seguir ampliando mis conocimientos, afrontar nuevos retos técnicos y mejorar continuamente mis habilidades como desarrollador, aplicando 
                 buenas prácticas y manteniendome en constante aprendizaje.</p>
             </div>
         </section>
+        <hr>
+        <section id="experiencia">
+            <h2 class="experiencia">Experiencia</h2>
+            <div class="experienciaContainer">
+                <div class="cajon1 anim-right">
+                    <h3>Practicas Desarrollo web</h3>
+                    <p>CreatorsCo. S.L</p>
+                    <p>(Sep 2025 - Dic 2025)</p>
+                </div>
+                <div class="cajon2 anim-right">
+                    <h3>Cajero</h3>
+                    <p>Carrefour S.L</p>
+                    <p>(Jun 2024 - Ago 2024) & (Jul 2025 - Ago 2025)</p>
+                </div>
+                <div class="cajon1 anim-right">
+                    <h3>Montaje y desmontaje de escenarios</h3>
+                    <p>Bierzo S.L</p>
+                    <p>(Jun 2021 - Agos 2021)</p>
+                </div>
+                <div class="cajon2 anim-right">
+                    <h3>Vendedor en tiendas y alamacenes</h3>
+                    <p>Toysrus</p>
+                    <p>(Dic 2020 - Ene 2021)</p>
+                </div>
+                <div class="cajon1 anim-right">
+                    <h3>Gasolinero</h3>
+                    <p>Carrefour S.L</p>
+                    <p>(Dic 2023 - Ene 2022)</p>
+                </div>
+                <div class="cajon2 anim-right">
+                    <h3>Practicas Reparacion equipos informáticos</h3>
+                    <p>Securactiva S.L</p>
+                    <p>(Sep 2021 - Dic 2021)</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="habilidades">
+            <h2 class="habilidades">Habilidades</h2>
+            <div class="habilidadesContainer">
+                <div class="fila">
+                    <div class="duplicado">
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/HTML5_logo_and_wordmark.svg.png" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/css3.png" alt="CSS3">
+                            <p>CSS</p>  
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/javascrip.webp" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/PHP-logo.png" alt="PHP">
+                            <p>PHP</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/Laravel.png" alt="Laravel">
+                            <p>Laravel</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/React.png" alt="React">
+                            <p>React</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/mysql.png" alt="MySQL">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/Node.js.png" alt="node.js">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/Bootstrap.png" alt="bootstrap">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/LESS.png" alt="LESS">
+                            <p>LESS</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/git.svg" alt="git">
+                            <p>Git</p>
+                        </div>
+                        
+                        <!-- copia para completar el bucle -->
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/HTML5_logo_and_wordmark.svg.png" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/css3.png" alt="CSS3">
+                            <p>CSS</p>  
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/javascrip.webp" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/PHP-logo.png" alt="PHP">
+                            <p>PHP</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/Laravel.png" alt="Laravel">
+                            <p>Laravel</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/React.png" alt="React">
+                            <p>React</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/mysql.png" alt="MySQL">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/Node.js.png" alt="node.js">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/Bootstrap.png" alt="bootstrap">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/LESS.png" alt="LESS">
+                            <p>LESS</p>
+                        </div>
+                        <div class="lenguajes">
+                            <img class="imgLenguajes" src="img/git.svg" alt="git">
+                            <p>Git</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 class="estudios">Estudios</h2>
+            <div class="estudiosContainer">
+                <div class="cajon1 anim-right">
+                    <h3>Educación Secundaria Obligatoria</h3>
+                    <p>Colegio Concertado Espíritu Santo. Ponferrada.</p>
+                </div>
+                <div class="cajon2 anim-right">
+                    <h3>Bachillerato de Ciencias Sociales y Humanidades</h3>
+                    <p>I.E.S VIrgen de la Encina. Ponferrada.</p>
+                </div>
+                <div class="cajon1 anim-right">
+                    <h3> Sistemas Microinformáticos</h3>
+                    <p>Escuela ATU Ponferrada</p>
+                </div>
+                <div class="cajon2 anim-right">
+                    <h3>Monitor Tiempo Libre</h3>
+                    <p>Bierzo Natura S.L</p>
+                </div>
+                <div class="cajon1 anim-right">
+                    <h3>Formación Profesional Superior Desarrollo de Aplicaciones Web</h3>
+                    <p>I.E.S San Andres de Rabanedo. León</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2 class="proyectos">Proyectos</h2>
+            <div class="proyectosContainer">
+                <div class="cajon1 proyecto">
+                    <img class="proyectoImagen" src="img/pokedex.png" alt="pokedex">
+                    <h3>Pokedex</h3>
+                    <ul class="listaLenguajes">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="javascript">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="cajon2 proyecto">
+                    <img class="proyectoImagen" src="img/tresEnRaya.png" alt="tres en raya">
+                    <h3>Tres en Raya</h3>
+                    <ul class="listaLenguajes">
+                        <li class="react">React</li>
+                        <li class="css">CSS</li>
+                </div>
+                <div class="cajon1 proyecto">
+                    <img class="proyectoImagen" src="img/tapas.png" alt="tapas">
+                    <h3>Concurso de Tapas</h3>
+                    <ul class="listaLenguajes">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="javascript">JavaScript</li>
+                        <li class="php">PHP</li>
+                        <li class="docker">Docker</li>
+                    </ul>
+                </div>
+                <div class="cajon2 proyecto">
+                    <img class="proyectoImagen" src="img/GameShop.png" alt="GameShop">
+                    <h3>GameShop</h3>
+                    <ul class="listaLenguajes">
+                        <li class="react">React</li>
+                        <li class="css">CSS</li>
+                        <li class="bootstrap">Bootstrap</li>
+                        <li class="docker">Docker</li>
+                        <li class="node">Node.js</li>
+                    </ul>
+                </div>
+                <div class="cajon1 proyecto">
+                    <img class="proyectoImagen" src="img/memoria.png" alt="memoria">
+                    <h3>Memoria</h3>
+                    <ul class="listaLenguajes">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="javascript">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+<script src="script.js"></script>
+<script> 
+    navegar();
+</script>
 </html>
